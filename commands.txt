@@ -1,0 +1,4 @@
+
+npm install --legacy-peer-deps
+set NODE_OPTIONS=--openssl-legacy-provider
+npm run start
