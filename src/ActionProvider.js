@@ -20,9 +20,11 @@ class ActionProvider {
   }
 
   callApi = async (question) => {
+    const api_url_local = "http://localhost:8000/query"
+    const api_url_aws = "http://44.212.16.117:8080/query"
     let query = { question }
     console.log(JSON.stringify(query))
-    fetch("http://localhost:8000/query", {
+    fetch(api_url_aws, {
       method: "POST",
       headers: {
         'Accept': 'application/json',
